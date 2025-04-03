@@ -22,7 +22,7 @@ modification type=standard;  /* 显示模型修正建议 */
 run;
 
 /* 跨组等价性检验 */
-proc calis data=std_data group=景点 groupnames=('博物馆' '城隍庙' '从熙公祠' '青龙庙');
+proc calis data=std_data group=景点 groupnames=('嵌瓷博物馆' '城隍庙' '从熙公祠' '青龙庙');
 model test1:  /* 形态等价 */
   measurement 嵌瓷存在感 = q4 q5 q6;
 model test2:  /* 度量等价 */
